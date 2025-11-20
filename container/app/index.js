@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello from the containerized Node.js app!//jonathan");
+  res.send("Hello from the containerized Node.js app!//jonathan2.0");
 });
 
 app.get("/health", (req, res) => {
