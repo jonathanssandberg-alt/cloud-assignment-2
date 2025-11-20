@@ -1,0 +1,14 @@
+# Terraform 
+**/.terraform/*
+**/*.tfstate
+**/*.tfstate.backup
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db

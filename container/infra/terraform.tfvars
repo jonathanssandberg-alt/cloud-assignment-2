@@ -1,0 +1,1 @@
+container_image = "166647428061.dkr.ecr.eu-west-1.amazonaws.com/node-container-app:latest"
