@@ -25,9 +25,8 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
-
-            - name: Build, tag, and push image
-              - name: Build, tag, and push image
+        
+      - name: Build, tag, and push image
         run: |
           ECR_REPO="166647428061.dkr.ecr.eu-west-1.amazonaws.com/node-container-app"
           IMAGE_TAG=${{ github.sha }}
@@ -37,5 +36,6 @@ jobs:
           docker build -f container/app/Dockerfile -t node-app:$IMAGE_TAG container/app
           docker tag node-app:$IMAGE_TAG $ECR_REPO:$IMAGE_TAG
           docker push $ECR_REPO:$IMAGE_TAG
+
 
 
